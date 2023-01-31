@@ -5,9 +5,16 @@ const array = Array(30).fill().map(() => Math.ceil((Math.random()*20)+5));
 console.log(array);
 // 2. Naudodamiesi 1 uždavinio masyvu:
         // a) Suskaičiuokite kiek masyve yra reikšmių didesnių už 10;
+        console.log(array.filter( x => x > 10).length);
         // b) Raskite didžiausią masyvo reikšmę ir jos indeksą;
+        let maxValue = Math.max(...array);
+        let maxIndex = array.indexOf(maxValue);
+        console.log(maxValue, maxIndex);
         // c) Suskaičiuokite visų porinių(lyginių) indeksų reikšmių sumą;
+        console.log(array.filter((_,i) => i%2 === 0).reduce((partialSum, a) => partialSum + a, 0));
         // d) Sukurkite naują masyvą, kurio reikšmės yra 1 uždavinio masyvo reikšmes minus tos reikšmės indeksas;
+        let newArray = array.map((numb,i) => numb - i);
+        console.log(newArray);
         // e) Papildykite masyvą papildomais 10 elementų su reikšmėmis nuo 5 iki 25, kad bendras masyvas padidėtų iki indekso 39;
         // f) Iš masyvo elementų sukurkite du naujus masyvus.Vienas turi būti sudarytas iš neporinių indeksų reikšmių, o kitas iš porinių(pagal neporinį - porinį indeksą, ne reikšmę);
         // g) Pirminio masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu jie didesni už 15;
