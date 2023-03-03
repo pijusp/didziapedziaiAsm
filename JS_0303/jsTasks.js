@@ -143,7 +143,7 @@ function pirminisSkaicius(n) {
 
     return true;
 }
-console.log(pirminisSkaicius(1)); // false
+console.log(pirminisSkaicius(3)); // false
 console.log(pirminisSkaicius(2)); // true
 console.log(pirminisSkaicius(7)); // true
 console.log(pirminisSkaicius(12)); // false
