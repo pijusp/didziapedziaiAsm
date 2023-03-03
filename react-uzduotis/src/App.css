@@ -1,0 +1,36 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+ol {
+    background: #ff9999;
+    padding: 20px;
+}
+
+ul {
+    background: #fae3c6;
+    padding: 20px;
+}
+
+ol li {
+    background: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+ul li {
+    list-style-type: decimal;
+    background: #f1f0ea;
+    color: black;
+    margin: 5px;
+}
